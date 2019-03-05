@@ -7,13 +7,13 @@
                 @foreach($arr as $a)
                     <p>
                         {{$a->name}}
-                        {{$a->id}}
                         <br>
                         <a href="{{ route('edit', ['id' => $a->id] ) }}">
                             Редактировать
                         </a>
                     </p>
                 @endforeach
+                    <a href="{{route('add_obj')}}">добавить</a>
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@ class bancController extends Controller
     	$name = $request->input('name');
     	$tabe  = new currency();
 		$tabwl = $tabe->create(['name'=>$name]);
-		return back();
+		return redirect(route('index'));
 	}
 	public function edit($id){
 		$tabel = currency::where('id','=',$id)->get();
@@ -29,6 +29,6 @@ class bancController extends Controller
 		$name = $request->input('name');
 		$tabl->name= $name;
 		$tabl->save();
-		return back();
+		return redirect(route('index'));
 	}
 }

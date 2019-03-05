@@ -12,8 +12,8 @@
 */
 
 Route::group(['middleware' => 'auth'] , function(){
-	Route::get('/', 'bancController@index')	;
-	Route::get('/add', 'bancController@add');
+	Route::get('/', 'bancController@index')->name('index')	;
+	Route::get('/add', 'bancController@add')->name('add_obj');
 	Route::post('/addasd', 'bancController@addRequest')->name('add');
 	Route::get('/edit/{id}', 'bancController@edit')->name('edit');
 	Route::post('/edit_request', 'bancController@edit_request')->name('edit_request');
