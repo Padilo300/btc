@@ -5,25 +5,60 @@ namespace App\Http\Controllers;
 use App\currency;
 use Illuminate\Http\Request;
 
+
+
 class bancController extends Controller
 {
     public function index(){
     	$tabel = currency::get();
 		return view('index', ['arr' => $tabel]);
 	}
+
+	public function btcbtc(){
+		$tabel = currency::where('s_BTC','=',1,'AND','f_BTC','=',1)->get();
+		return view('bitcoin-to-bitcoin', ['data' => $tabel]);
+	}
+
+	public function test(){
+    	$tabel = currency::get();
+		return view('test', ['arr' => $tabel]);
+	}
+
 	public function add(){
     	return view('layouts.addCurrency');
 	}
+
 	public function addRequest(Request $request){
-    	$name = $request->input('name');
-    	$tabe  = new currency();
-		$tabwl = $tabe->create(['name'=>$name]);
+
+		$forea = $request->input();
+
+		$name  		= $request->input('name')		;
+		$startCurr  = $request->input('startCurr')	;
+		$finishCurr = $request->input('finishCurr')	;
+		$href  		= $request->input('href')		;
+
+		$tabe  = new currency();
+		
+		$insertArr = array('name'=> $name,'href'=> $href);
+
+		foreach($startCurr as $key => $val){
+			$insertArr[$val] = 1;
+		}
+
+		foreach($finishCurr as $key => $val){
+			$insertArr[$val] = 1;
+		}
+
+		$tabwl = $tabe->insert($insertArr);
+		
 		return redirect(route('index'));
 	}
+
 	public function edit($id){
 		$tabel = currency::where('id','=',$id)->get();
 		return view('edit', ['arr' => $tabel]);
 	}
+
 	public function edit_request(Request $request){
     	$tabl = currency::find($request->input('id'));
 		$name = $request->input('name');

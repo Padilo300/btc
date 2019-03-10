@@ -20,6 +20,8 @@ Route::group(['middleware' => 'auth'] , function(){
 
 });
 
+Route::get('/test', 'bancController@test')->name('test');
+Route::get('/bitcoin-to-bitcoin', 'bancController@btcbtc')->name('btcbtc');
 
 Auth::routes();
 
