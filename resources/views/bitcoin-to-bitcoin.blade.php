@@ -154,23 +154,73 @@ changeZoneTime(document.getElementById('updatetime'), 1552202370, true);
     </thead>
     <tbody>
 
-
 @foreach($data as $item)
+    
+    <tr onclick="window.open('{{$item->href}}');">
+        <td class="ir">
+            <span class="io" id="io0" onmousedown="shc(0)" onclick="stopBubbling(event)" onmouseover="show_info(0)" onmouseout="shd()">
+            </span>
+        </td>
 
-    {{dd($item)}}
+        <td class="bj">
+            <div class="pa">
+                <a rel="nofollow" target="_blank" href="https://www.bestchange.ru/click.php?id=710&from=63&to=93&url=1" onclick="return fco(710)">
+                </a>
+                <div class="pc">
+                    <div class="ca">
+                        {{$item->name}}
+                    </div>
+                </div>
+            </div>
+        </td>
+        
+        <td class="bi">
+            <div class="fs">
+                260 178.5431 
+                <small>
+                    RUB QIWI
+                </small>
+            </div>
+            <div class="fm">
+            </div>
+        </td>
 
+        <td class="bi">
+            1 
+            <small>
+                BTC
+            </small>
+        </td>
+
+        <td class="ar arp" title="Максимум валюты Bitcoin (BTC), сколько может выдать Bittrend">
+            50.83
+        </td>
+
+        <td class="rw" onclick="crw(0)">
+            <a href="https://www.bestchange.ru/bittrend-exchanger.html" class="rwa" onclick="return arw(0)" title="Отзывы Bittrend">
+                <table>
+                    <tr>
+                        <td class="rwl">
+                            0
+                        </td>
+                        <td class="del">
+                            /
+                        </td>
+                        <td class="rwr pos">
+                            74
+                        </td>
+                        <td class="end">
+                        </td>
+                    </tr>
+                </table>
+            </a>
+        </td>
+    </tr>
+    
 @endforeach
-        <tr onclick="ccl(710, 63, 93, 1)">
-            <td class="ir"><span class="io" id="io0" onmousedown="shc(0)" onclick="stopBubbling(event)" onmouseover="show_info(0)" onmouseout="shd()"></span></td>
-            <td class="bj"><div class="pa"><a rel="nofollow" target="_blank" href="https://www.bestchange.ru/click.php?id=710&from=63&to=93&url=1" onclick="return fco(710)"></a><div class="pc"><div class="ca">Bittrend</div></div></div></td><td class="bi"><div class="fs">260 178.5431 <small>RUB QIWI</small></div><div class="fm"></div></td>
-            <td class="bi">1 <small>BTC</small></td>
-            <td class="ar arp" title="Максимум валюты Bitcoin (BTC), сколько может выдать Bittrend">50.83</td>
-            <td class="rw" onclick="crw(0)"><a href="https://www.bestchange.ru/bittrend-exchanger.html" class="rwa" onclick="return arw(0)" title="Отзывы Bittrend"><table><tr><td class="rwl">0</td>
-            <td class="del">/</td><td class="rwr pos">74</td>
-            <td class="end"></td>
-        </tr>
-</table>
-</a></td></tr>
+
+        
+
 </table>
     </div>
 

@@ -15,7 +15,12 @@ class bancController extends Controller
 	}
 
 	public function btcbtc(){
-		$tabel = currency::where('s_BTC','=',1,'AND','f_BTC','=',1)->get();
+		$tabel = currency::where('s_BTC','=',1)->where('f_BTC','=',1)->get();
+		return view('bitcoin-to-bitcoin', ['data' => $tabel]);
+	}
+
+	public function btcbth(){
+		$tabel = currency::where('s_BTC','=',1)->where('f_BСH','=',1)->get();
 		return view('bitcoin-to-bitcoin', ['data' => $tabel]);
 	}
 
@@ -58,6 +63,8 @@ class bancController extends Controller
 		$tabel = currency::where('id','=',$id)->get();
 		return view('edit', ['arr' => $tabel]);
 	}
+
+
 
 	public function edit_request(Request $request){
     	$tabl = currency::find($request->input('id'));
