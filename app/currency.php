@@ -9,4 +9,6 @@ class currency extends Model
 	protected $table 		= "currencies";
 	protected $primaryKey 	= "id";
 	protected $guarded		= [];
+
+	
 }

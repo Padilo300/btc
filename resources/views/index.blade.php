@@ -3,17 +3,49 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
-                @foreach($arr as $a)
-                    <p>
-                        {{$a->name}}
-                        <br>
-                        <a href="{{ route('edit', ['id' => $a->id] ) }}">
+            <div class="col-12">
+                <table class="table">
+                    <tr>
+                        <th>Название обменника</th>
+                        <th>Ссылка на обменник</th>
+                        <th>Умножить курс на %</th>
+                        <th>Резерв</th>
+                        <th>Кол-во отзывов</th>
+                        <th>
                             Редактировать
-                        </a>
-                    </p>
+                        </th>
+                    </tr>
+                    <tbody>
+
+                @foreach($arr as $a)
+                        <tr>
+                            <td>
+                                {{$a->name}}
+                            </td>
+                            <td>
+                                {{$a->href}}    
+                            </td>
+                            <td>
+                                {{$a->course_management}}    
+                            </td>
+                            <td>
+                                {{$a->rezerv}}    
+                            </td>
+                            <td>
+                                {{$a->review}}    
+                            </td>
+                            <td>
+                                <a href="{{ route('edit', ['id' => $a->id] ) }}">
+                                    Редактировать
+                                </a>                                
+                            </td>
+                        </tr>
+
                 @endforeach
                     <a href="{{route('add_obj')}}">добавить</a>
+                    </tbody>
+                </table>
+                
             </div>
         </div>
     </div>
