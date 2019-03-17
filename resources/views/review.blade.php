@@ -73,7 +73,9 @@
         <div class="header">
             <div class="logo">
 
-                <img src="https://www.bestchange.ru/images/logo.jpg" alt="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" title="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" />
+            <a href="/">
+                    <img src="https://www.bestchange.ru/images/logo.jpg" alt="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" title="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" />
+                </a>
             </div>
             <ul class="menu">
 
@@ -302,13 +304,14 @@
                                     <div id="new_review_container">
                                     </div>
                                     @foreach($data as $item)
+
                                         <div id="review517580" class="review_block_1">
                                             <div class="review_header">
                                                 <table class="review_info">
                                                     <tbody>
                                                         <tr>
                                                             <td width="4%"><span class="review_type_1"></span></td>
-                                                            <td width="12%" class="nospace">{{$item->name}}</td>
+                                                            <td width="12%" class="nospace"><?php echo $reviewName[$i];?></td>
                                                             <td width="4%"></td>
                                                             <td width="15%" class="inback nospace">{{$item->ip}}</td>
                                                             <td width="65%" class="inback">{{$item->date}}</td>
@@ -318,8 +321,9 @@
                                                 <div class="review_icon"></div>
                                             </div>
                                             <div class="review_middle">
+                                                <div class="review_text"><?php echo $reviewText[$i]; ?></div>
 
-                                                <div class="review_text"></div>
+                                                <?php $i++;?>
                                                 <div id="reviewcommentexpand517580" class="review_comment_expand hide">
                                                     <span id="commentexpandlink517580" onclick="show_comment_case(517580)"><span class="link dashlink"><span id="commentexpandtext517580">Развернуть</span> (<span id="commentexpandcount517580">0</span>)</span><span id="vcbullet517580" class="bulletdown"></span></span>
                                                     <noscript><span class="noscript">(необходим JavaScript)</span></noscript>

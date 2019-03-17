@@ -26,6 +26,7 @@
                                 <th>Умножить курс на %</th>
                                 <th>Резерв</th>
                                 <th>Кол-во отзывов</th>
+                                <th>Кол-во отзывов начиная с: </th>
                             </tr>
                             <tr>
                                 <td>
@@ -410,6 +411,9 @@
                                 </td>
                                 <td>
                                   <input type="number" name="review" step="10" min='10'  require>
+                                </td>
+                                <td>
+                                  <input type="number" name="reviewStart" step="10" min='10'  require>
                                 </td>
                             </tr>
                         </table>

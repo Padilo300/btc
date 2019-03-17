@@ -74,7 +74,9 @@
         <div class="header">
             <div class="logo">
 
-                <img src="https://www.bestchange.ru/images/logo.jpg" alt="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" title="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" />
+            <a href="/">
+                    <img src="https://www.bestchange.ru/images/logo.jpg" alt="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" title="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" />
+                </a>
             </div>
             <ul class="menu">
 
@@ -196,7 +198,7 @@
         </td>
 
         <td class="ar arp">
-            $89 404
+            {{$item->rezerv}}
         </td>
         <td class="ar arp">
             39
@@ -222,7 +224,9 @@
                                 /
                             </td>
                             <td class="rwr pos">
-                                384
+
+                            {{$item->review}}       
+                            
                             </td>
                             <td class="end"></td>
                         </tr>

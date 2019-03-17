@@ -72,8 +72,10 @@
     <div class="wrapper">
         <div class="header">
             <div class="logo">
-
-                <img src="https://www.bestchange.ru/images/logo.jpg" alt="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" title="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" />
+                <a href="/">
+                    <img src="https://www.bestchange.ru/images/logo.jpg" alt="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" title="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" />
+                </a>
+                
             </div>
             <ul class="menu">
 
@@ -124,35 +126,7 @@
                             </ul>
                             <div class="bottom"></div>
                             <div id="content_rates">
-                                <div id="details" class="hide" onmouseout="shd()">
-                                    <dl>
-                                        <dt id="det_changer"></dt>
-                                        <dd>
-                                            <table>
-                                                <tr>
-                                                    <td class="param">WebMoney BL:</td>
-                                                    <td id="det_bl" class="val"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="param">Perfect Money TS:</td>
-                                                    <td id="det_ts" class="val"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="param">Сумма резервов:</td>
-                                                    <td id="det_reserve" class="val"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="param">Возраст:</td>
-                                                    <td id="det_date" class="val"></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="param">Страна:</td>
-                                                    <td id="det_country" class="val"></td>
-                                                </tr>
-                                            </table>
-                                        </dd>
-                                    </dl>
-                                </div>
+                                
 
                                 <div id="rates_block">
                                     <table id="content_table">

@@ -73,7 +73,9 @@
         <div class="header">
             <div class="logo">
 
-                <img src="https://www.bestchange.ru/images/logo.jpg" alt="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" title="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" />
+            <a href="/">
+                    <img src="https://www.bestchange.ru/images/logo.jpg" alt="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" title="Мониторинг обменных пунктов. Выгодный обмен WebMoney, Яндекс.Деньги, PayPal, QIWI, Perfect Money, Payza, LiqPay, Privat24, Visa, MasterCard и других электронных денег" />
+                </a>
             </div>
             <ul class="menu">
 

@@ -27,6 +27,7 @@ Route::get('/help'		, 'bancController@help')->name('help')	;
 Route::get('/faq'		, 'bancController@faq')->name('faq')	;
 Route::get('/contacts'  	, 'bancController@contacts')->name('contacts')	;
 Route::get('/review/{id}'	, 'bancController@review')->name('review');
+Route::get('/remove/{id}'	, 'bancController@remove')->name('remove');
 
 Route::get('/list', 'bancController@list')->name('list');
 Route::get('/bitcoin-to-bitcoin-cash', 'bancController@btcbth')->name('btcbth');

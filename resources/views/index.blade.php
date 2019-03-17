@@ -12,7 +12,7 @@
                         <th>Резерв</th>
                         <th>Кол-во отзывов</th>
                         <th>
-                            Редактировать
+                            Управление
                         </th>
                     </tr>
                     <tbody>
@@ -37,7 +37,13 @@
                             <td>
                                 <a href="{{ route('edit', ['id' => $a->id] ) }}">
                                     Редактировать
-                                </a>                                
+                                </a>             
+                                <br>
+
+                                <a href="{{ route('remove', ['id' => $a->id] ) }}" style="color: red" >
+                                    Удалить
+                                </a>             
+
                             </td>
                         </tr>
 

@@ -24,6 +24,8 @@ class CreateCurrenciesTable extends Migration
             $table->string('coef')->default('1');
             $table->string('rezerv')->default('50');
             $table->string('review')->default('50');
+            $table->string('reviewStart')->default('50');
+            
             
 
             $table->boolean('f_BTC')->default($defaultValue);

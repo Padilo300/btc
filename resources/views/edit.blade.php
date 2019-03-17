@@ -15,6 +15,7 @@
         <div class="col-12">
             <form action="{{route('edit_request')}}" method="post">
                 {!! csrf_field() !!}
+                <input type="hidden" value="{{$arr[0]->id}}" name="id">
                 <div class="row">
                     <div class="col">
                         <table class="table">
@@ -26,6 +27,7 @@
                                 <th>Умножить курс на %</th>
                                 <th>Резерв</th>
                                 <th>Кол-во отзывов</th>
+                                <th>Кол-во отзывов начиная с: </th>
                             </tr>
                             <tr>
                                 <td>
@@ -403,13 +405,16 @@
                                     <input type="text" name="href" require value="{{$arr[0]->href}}">
                                 </td>
                                 <td>
-                                    <input type="number" step="0.01" name="coef" min='1' max="100" require value="{{$arr[0]->coef}}">
+                                    <input type="number" step="0.01" name="coef" min='1' max="100" require value="{{$arr[0]->course_management}}">
                                 </td>
                                 <td>
                                     <input type="number" name="rezerv" step="10" min='10' require value="{{$arr[0]->rezerv}}">
                                 </td>
                                 <td>
                                     <input type="number" name="review" step="10" min='10' require value="{{$arr[0]->review}}">
+                                </td>
+                                <td>
+                                  <input type="number" name="reviewStart" step="10" min='10'  require value="{{$arr[0]->reviewStart}}">
                                 </td>
                             </tr>
                         </table>
